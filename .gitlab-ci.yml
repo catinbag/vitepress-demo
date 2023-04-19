@@ -7,7 +7,7 @@ pages:
     - pwd
     - export PATH="/usr/local/opt/node@18/bin:$PATH"
     - yarn install
-    - yarn build
+    - yarn docs:build
   artifacts:
     paths:
       - public
