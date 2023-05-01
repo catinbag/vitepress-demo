@@ -1,11 +1,7 @@
-stages:
-  - build
+image: node:18.16.0
 
 pages:
-  stage: build
   script:
-    - pwd
-    - export PATH="/usr/local/opt/node@18/bin:$PATH"
     - yarn install
     - yarn docs:build
   artifacts:
